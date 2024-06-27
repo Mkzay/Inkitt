@@ -14,9 +14,9 @@ const Main = () => {
         </button>
       </div>
       <div className="flex flex-col items-center justify-center gap-10">
-        <div className="bg-[#d0cfbb] rounded-xl flex items-center justify-center lg:w-[81rem] lg:h-[36rem]">
+        <div className="bg-white rounded-xl flex items-center justify-center w-[21rem] h-[14rem] md:w-[35rem] md:h-[20rem] lg:w-[55rem] lg:h-[28rem]">
           <img
-            className="rounded-xl md:w-10/12 lg:w-8/12"
+            className="rounded-xl w-full h-full"
             src="/books.jpg"
             alt="books"
           />
