@@ -13,7 +13,7 @@ const MobileMenu = ({ openUp, openMenu }) => {
 
   return (
     <div
-      className={`${openUp} absolute left-0 top-0 flex flex-col items-center justify-center gap-20 bg-black h-screen w-full text-white px-4 lg:hidden`}
+      className={`${openUp} absolute left-0 top-0 flex flex-col items-center justify-center gap-28 bg-black h-screen w-full text-white px-4 lg:hidden`}
     >
       <div className="flex flex-col justify-between gap-28">
         <div className="flex items-center justify-end gap-20">
