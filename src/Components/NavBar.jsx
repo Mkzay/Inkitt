@@ -15,7 +15,7 @@ const NavBar = () => {
     : "translate-x-0 duration-500 ease-in";
 
   return (
-    <div className="flex items-center justify-between py-10 px-4 fixed w-full top-0 lg:px-8 lg:py-5">
+    <div className="flex items-center justify-between py-10 px-4 fixed w-full top-0 z-10 lg:px-8 lg:py-5">
       <button
         onClick={openMenu}
         className="border border-black w-11 h-11 flex items-center justify-center rounded-full lg:hidden"

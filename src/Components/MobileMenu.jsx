@@ -16,11 +16,11 @@ const MobileMenu = ({ openUp, openMenu }) => {
       className={`${openUp} absolute left-0 top-0 flex flex-col items-center justify-center gap-28 bg-black h-screen w-full text-white px-4 lg:hidden`}
     >
       <div className="flex flex-col justify-between gap-28">
-        <div className="flex items-center justify-end gap-20">
+        <div className="flex items-center justify-end gap-10">
           <h1 className="text-2xl font-cursive font-semibold">inkitt.</h1>
           <button
             onClick={openMenu}
-            className="border border-white w-11 h-11 flex items-center justify-center rounded-full -mr-12"
+            className="border border-white w-11 h-11 flex items-center justify-center rounded-full"
           >
             <FontAwesomeIcon icon={faXmark} />
           </button>
@@ -32,7 +32,7 @@ const MobileMenu = ({ openUp, openMenu }) => {
           <li>Writing Contests</li>
         </ul>
       </div>
-      <div className="flex flex-col gap-5 font-open font-medium text-lg w-full">
+      <div className="flex flex-col gap-5 font-open font-medium text-lg w-full md:w-8/12">
         <button className="bg-white rounded-full text-black py-3 px-4">
           Sign In
         </button>
