@@ -32,7 +32,7 @@ const MobileMenu = ({ openUp, openMenu }) => {
           <li>Writing Contests</li>
         </ul>
       </div>
-      <div className="flex flex-col gap-5 font-open font-medium text-lg">
+      <div className="flex flex-col gap-5 font-open font-medium text-lg w-full">
         <button className="bg-white rounded-full text-black py-3 px-4">
           Sign In
         </button>
