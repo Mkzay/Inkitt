@@ -20,7 +20,7 @@ const MobileMenu = ({ openUp, openMenu }) => {
           <h1 className="text-2xl font-cursive font-semibold">inkitt.</h1>
           <button
             onClick={openMenu}
-            className="border border-white w-11 h-11 flex items-center justify-center rounded-full"
+            className="border border-white w-11 h-11 flex items-center justify-center rounded-full -mr-12"
           >
             <FontAwesomeIcon icon={faXmark} />
           </button>
