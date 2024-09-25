@@ -58,10 +58,10 @@ const Book = () => {
   if (error) return <p>Error: {error}</p>;
 
   return (
-    <div className="flex flex-col items-start pt-10 px-2 lg:px-10">
-      <h1 className="text-2xl/normal text-center font-cursive font-bold uppercase md:text-4xl/loose lg:text-5xl/loose">All Top Books</h1>
+    <div className="flex flex-col items-start pt-10 lg:px-10 overflow-x-auto overflow-y-hidden hide-scrollbar scroll-smooth">
+      <h1 className="pl-5 text-2xl/normal text-center font-cursive font-bold uppercase md:text-4xl/loose lg:text-5xl/loose">All Top Books</h1>
       {books.length > 0 ? (
-        <ul className="flex items-center justify-center my-auto gap-4 overflow-x-auto overflow-y-hidden lg:hide-scrollbar scroll-smooth h-fit px-5 py-10">
+        <ul className="flex items-center justify-center my-auto gap-4  h-fit px-5 py-10">
           {books.map((book, index) => (
             <li
               key={`${book.bookTitle || book.title || "book"}-${index}`}
