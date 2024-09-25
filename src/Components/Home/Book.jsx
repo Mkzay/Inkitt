@@ -59,7 +59,7 @@ const Book = () => {
   return (
     <div>
       {books.length > 0 ? (
-        <ul className="flex items-center justify-center my-auto gap-4 flex-wrap">
+        <ul className="flex items-center justify-center my-auto gap-4 lg:flex-wrap">
           {books.map((book, index) => (
             <li
               key={`${book.bookTitle || book.title || "book"}-${index}`}
