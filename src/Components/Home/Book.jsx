@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Loader from "../Reusable/Loader";
 
 const Book = () => {
   const [books, setBooks] = useState([]);
@@ -53,7 +54,7 @@ const Book = () => {
     fetchBooks();
   }, []);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <Loader />;
   if (error) return <p>Error: {error}</p>;
 
   return (
@@ -65,7 +66,9 @@ const Book = () => {
               key={`${book.bookTitle || book.title || "book"}-${index}`}
               className="flex flex-col h-72"
             >
-              <p className="w-48">{book.bookAuthor || book.author || "No author"}</p>
+              <p className="w-48">
+                {book.bookAuthor || book.author || "No author"}
+              </p>
               {(book.bookImage || book.image) && (
                 <img
                   src={book.bookImage || book.image}
@@ -73,7 +76,9 @@ const Book = () => {
                   className="w-36 h-48"
                 />
               )}
-              <p className="w-32">{book.bookTitle || book.title || "No title"}</p>
+              <p className="w-32">
+                {book.bookTitle || book.title || "No title"}
+              </p>
             </li>
           ))}
         </ul>
