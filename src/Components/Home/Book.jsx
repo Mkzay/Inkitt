@@ -60,7 +60,7 @@ const Book = () => {
   return (
     <div>
       {books.length > 0 ? (
-        <ul className="flex items-center justify-center my-auto gap-4 overflow-x-auto lg:flex-wrap">
+        <ul className="flex items-center justify-center my-auto gap-4 overflow-x-auto hide-scrollbar scroll-smooth h-fit py-10">
           {books.map((book, index) => (
             <li
               key={`${book.bookTitle || book.title || "book"}-${index}`}
