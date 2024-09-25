@@ -59,9 +59,11 @@ const Book = () => {
 
   return (
     <div className="flex flex-col items-start pt-10 lg:px-10 overflow-x-auto overflow-y-hidden hide-scrollbar scroll-smooth">
-      <h1 className="pl-5 text-2xl/normal text-center font-cursive font-bold uppercase md:text-4xl/loose lg:text-5xl/loose">All Top Books</h1>
+      <h1 className="pl-5 text-2xl/normal text-center font-cursive font-bold uppercase md:text-4xl/loose lg:text-5xl/loose">
+        All Top Books
+      </h1>
       {books.length > 0 ? (
-        <ul className="flex items-center justify-center my-auto gap-4  h-fit px-5 py-10">
+        <ul className="flex items-center justify-center my-auto gap-4 h-fit px-5 py-10">
           {books.map((book, index) => (
             <li
               key={`${book.bookTitle || book.title || "book"}-${index}`}
@@ -74,7 +76,7 @@ const Book = () => {
                 <img
                   src={book.bookImage || book.image}
                   alt={book.bookTitle || book.title || "Book cover"}
-                  className="w-36 h-48 hover:scale-150 transition-transform duration-300"
+                  className="w-36 h-48"
                 />
               )}
               <p className="w-32">
