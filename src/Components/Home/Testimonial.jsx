@@ -3,7 +3,7 @@ import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 const Testimonial = () => {
   return (
-    <div className="flex flex-col py-20 px-4 md:px-12 lg:px-8">
+    <div className="flex flex-col pb-20 px-4 md:px-12 lg:px-8">
       <div className="flex flex-col md:items-start ">
         <h1 className="text-[3.2rem]/normal text-center font-cursive font-bold md:text-4xl/loose lg:text-8xl/loose">
           Testimonials

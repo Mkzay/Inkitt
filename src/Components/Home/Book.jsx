@@ -58,7 +58,8 @@ const Book = () => {
   if (error) return <p>Error: {error}</p>;
 
   return (
-    <div>
+    <div className="flex flex-col items-start pt-10 px-10">
+      <h1 className="text-xl/normal text-center font-cursive font-bold uppercase md:text-2xl/loose lg:text-5xl/loose">All Top Books</h1>
       {books.length > 0 ? (
         <ul className="flex items-center justify-center my-auto gap-4 overflow-x-auto overflow-y-hidden hide-scrollbar scroll-smooth h-fit px-5 py-10">
           {books.map((book, index) => (
@@ -73,7 +74,7 @@ const Book = () => {
                 <img
                   src={book.bookImage || book.image}
                   alt={book.bookTitle || book.title || "Book cover"}
-                  className="w-36 h-48"
+                  className="w-36 h-48 hover:scale-150 transition-transform duration-300"
                 />
               )}
               <p className="w-32">
