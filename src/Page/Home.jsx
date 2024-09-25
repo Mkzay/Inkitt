@@ -1,13 +1,15 @@
-import Categories from "../Components/Categories";
-import Main from "../Components/Main";
-import Picks from "../Components/Picks";
+import Categories from "../Components//Home/Categories";
+import Book from "../Components/Home/Book";
+import Main from "../Components/Home/Main";
+import Testimonial from "../Components/Home/Testimonial";
 
 const Home = () => {
   return (
     <div>
       <Main />
       <Categories />
-      <Picks />
+      <Book />
+      <Testimonial />
     </div>
   );
 };
